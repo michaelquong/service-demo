@@ -59,7 +59,7 @@ The image of Demo service is not prebuilt. Expect building time before Demo serv
 
 **Testing:**
 - Chose to test with mocha
-- `tests/` directory at project root level will be home to simple 
+- `test/` directory at project root level will be home to simple 
 integration/e2e tests
 - Unit tests will follow source files in `src/` directory postfixed with a `.test.js`. Example: `src/index.test.js` for unit testing `src/index.js`.
 
