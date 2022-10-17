@@ -1,0 +1,9 @@
+node_modules
+sql
+*.log
+docker-compose.yaml
+
+# ignore testing files
+tests
+**/*.test.js
+

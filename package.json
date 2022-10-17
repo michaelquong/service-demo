@@ -1,0 +1,39 @@
+{
+  "name": "service-demo",
+  "version": "1.0.0",
+  "description": "Demo NodeJS Api service for learning",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test:unit": "mocha src/**/*.test.js",
+    "test:integration": "mocha test/**/*.js",
+    "test": "npm run test:unit && npm run test:integration",
+    "resources": "(curl -o $PWD/resources/classic-rock-raw-data.csv https://raw.githubusercontent.com/fivethirtyeight/data/master/classic-rock/classic-rock-raw-data.csv)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelquong/service-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelquong/service-demo/issues"
+  },
+  "homepage": "https://github.com/michaelquong/service-demo#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
+    "express": "^4.18.1",
+    "http": "^0.0.1-security",
+    "pg": "^8.8.0",
+    "request": "^2.88.2",
+    "swagger-jsdoc": "^6.2.5",
+    "swagger-ui-express": "^4.5.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.1.0",
+    "nodemon": "^2.0.20"
+  }
+}
