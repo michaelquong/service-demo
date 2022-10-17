@@ -41,6 +41,21 @@ The image of Demo service is not prebuilt. Expect building time before Demo serv
 | Raw_data | `UNIQUE_ID` Seems to be an appropriate pkey per description|
 | Raw_data | `COMBINDED` could be used as fkey to Table(song-list) as per description that it is most unique|
 
+**CSV to Postgres Table Mappings**  
+When using postgres DB, `Table(station_songs)` is created and `classic-rock-raw-data.csv` data is copied into it.
+
+| Csv Header | Posgres Table Column |
+| ---          | ---            |
+| SONG RAW     | song_raw       |
+| Song Clean   | song_clean     |
+| ARTIST RAW   | artist_raw     |
+| ARTIST CLEAN | artist_clean   |
+| CALLSIGN     | callsign       |
+| TIME         | unix_timestamp |
+| UNIQUE_ID    | id             |
+| COMBINED     | combined       |
+| First?       | _first         |
+
 *Notes: `/sql/init.sql` is responsible in copying the contents of the csv file starter data into postgres on start.*
 
 
